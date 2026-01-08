@@ -13,7 +13,7 @@ export default function OrderingSteps() {
         {
             id: 3,
             text: "Kami kirimkan desain dindingnya",
-            bgClass: "bg-white border border-gray-200",
+            bgClass: "bg-[#E8E8E8]",
         },
     ];
 

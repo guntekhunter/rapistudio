@@ -18,8 +18,8 @@ export default function ImageGrid() {
         <section className="py-20 px-4 bg-gray-50 dark:bg-neutral-900">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4">Selected Works</h2>
-                    <p className="text-gray-600 dark:text-gray-400">A glimpse into our creative universe.</p>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4">Hasil Desain Kami</h2>
+                    <p className="text-gray-600 dark:text-gray-400">Berikut beberapa hasil desain kami</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

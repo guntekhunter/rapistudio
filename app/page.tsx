@@ -7,7 +7,6 @@ import OrderingSteps from "./components/OrderingSteps";
 import TargetAudience from "./components/TargetAudience";
 import PricingExplanation from "./components/PricingExplanation";
 import FinalCTA from "./components/FinalCTA";
-import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
       <TargetAudience />
       <PricingExplanation />
       <FinalCTA />
-      <Footer />
     </main>
   );
 }

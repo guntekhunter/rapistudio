@@ -10,9 +10,8 @@ export default function TargetAudience() {
                     alt="Target Audience Background"
                     fill
                     className="object-cover"
-                    sizes="100vw"
+                    sizes="90vw"
                 />
-                <div className="absolute inset-0 bg-black/80" />
             </div>
 
             <div className="relative z-10 max-w-6xl mx-auto text-white">
