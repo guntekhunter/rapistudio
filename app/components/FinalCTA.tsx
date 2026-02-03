@@ -6,7 +6,22 @@ export default function FinalCTA() {
     "Halo, saya tertarik dengan jasa desain dinding Rp80.000. Bisa jelaskan lebih lanjut?"
   );
 
-  const whatsappUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+  const handleClick = () => {
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "Lead", {
+        value: 50000,
+        currency: "IDR",
+      });
+    }
+
+    setTimeout(() => {
+      window.open(whatsappUrl, "_blank");
+    }, 120);
+  };
+
+
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+
   return (
     <section className="py-24 px-6 bg-gray-50 dark:bg-neutral-900 text-center">
       <div className="max-w-xl mx-auto">
@@ -17,14 +32,7 @@ export default function FinalCTA() {
           Sekarang ada potongan 33% buat order pertama biar kamu lebih hemat.
         </p>
         <a
-          onClick={() => {
-            if (typeof window !== "undefined" && window.fbq) {
-              window.fbq("track", "Lead", {
-                value: 50000,
-                currency: "IDR",
-              });
-            }
-          }}
+          onClick={handleClick}
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"

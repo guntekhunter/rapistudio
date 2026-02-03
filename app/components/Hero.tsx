@@ -8,7 +8,20 @@ export default function Hero() {
     "Halo, saya tertarik dengan jasa desain dinding Rp80.000. Bisa jelaskan lebih lanjut?"
   );
 
-  const whatsappUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+  const handleClick = () => {
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "Lead", {
+        value: 50000,
+        currency: "IDR",
+      });
+    }
+
+    setTimeout(() => {
+      window.open(whatsappUrl, "_blank");
+    }, 120);
+  };
+
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -37,14 +50,7 @@ export default function Hero() {
         </p>
 
         <a
-          onClick={() => {
-            if (typeof window !== "undefined" && window.fbq) {
-              window.fbq("track", "Lead", {
-                value: 50000,
-                currency: "IDR",
-              });
-            }
-          }}
+          onClick={handleClick}
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
