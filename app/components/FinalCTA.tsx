@@ -10,11 +10,8 @@ export default function FinalCTA() {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   const handleClick = () => {
-    if (typeof window !== "undefined" && window.fbq) {
-      window.fbq("track", "Lead", {
-        value: 50000,
-        currency: "IDR",
-      });
+    if (typeof window !== "undefined" && (window as any).fbq) {
+      (window as any).fbq("track", "Contact");
     }
 
     setTimeout(() => {

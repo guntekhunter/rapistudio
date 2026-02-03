@@ -13,10 +13,7 @@ export default function Hero() {
 
   const handleClick = () => {
     if (typeof window !== "undefined" && (window as any).fbq) {
-      (window as any).fbq("track", "Lead", {
-        value: 50000,
-        currency: "IDR",
-      });
+      (window as any).fbq("track", "Contact");
     }
 
     // delay supaya pixel terkirim dulu
