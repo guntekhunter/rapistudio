@@ -3,25 +3,27 @@
 import Image from "next/image";
 
 export default function Hero() {
-  const phoneNumber = "6285656646637"; // ganti dengan nomor WA kamu
+  const phoneNumber = "6285656646637";
+
   const message = encodeURIComponent(
-    "Halo, saya tertarik dengan jasa desain dinding Rp80.000. Bisa jelaskan lebih lanjut?"
+    "Halo, saya tertarik dengan jasa desain dinding Rp50.000. Bisa jelaskan lebih lanjut?"
   );
 
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+
   const handleClick = () => {
-    if (typeof window !== "undefined" && window.fbq) {
-      window.fbq("track", "Lead", {
+    if (typeof window !== "undefined" && (window as any).fbq) {
+      (window as any).fbq("track", "Lead", {
         value: 50000,
         currency: "IDR",
       });
     }
 
+    // delay supaya pixel terkirim dulu
     setTimeout(() => {
       window.open(whatsappUrl, "_blank");
     }, 120);
   };
-
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -46,18 +48,15 @@ export default function Hero() {
 
         <p className="text-xl md:text-2xl mb-10 text-gray-200 max-w-2xl mx-auto">
           Biar nggak nyesel setelah beli bahan. Kami bantu gambarkan desainnya,
-          cuma Rp79.000.
+          cuma Rp50.000.
         </p>
 
-        <a
+        <button
           onClick={handleClick}
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
           className="inline-block bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition-all transform hover:scale-105 active:scale-95"
         >
           Pesan via WhatsApp
-        </a>
+        </button>
       </div>
     </section>
   );
