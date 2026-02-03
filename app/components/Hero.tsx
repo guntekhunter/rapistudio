@@ -48,7 +48,7 @@ export default function Hero() {
 
         <p className="text-xl md:text-2xl mb-10 text-gray-200 max-w-2xl mx-auto">
           Biar nggak nyesel setelah beli bahan. Kami bantu gambarkan desainnya,
-          cuma Rp50.000.
+          cuma Rp75.000.
         </p>
 
         <button
