@@ -38,8 +38,11 @@ export default function Hero() {
 
         <a
           onClick={() => {
-            if (window.fbq) {
-              window.fbq('track', 'Lead');
+            if (typeof window !== "undefined" && window.fbq) {
+              window.fbq("track", "Lead", {
+                value: 50000,
+                currency: "IDR",
+              });
             }
           }}
           href={whatsappUrl}
