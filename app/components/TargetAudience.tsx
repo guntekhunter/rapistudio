@@ -6,7 +6,7 @@ export default function TargetAudience() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="https://res.cloudinary.com/unm/image/upload/v1767877228/rapistudio/Mask_group_pzgs42.webp"
+                    src="https://res.cloudinary.com/unm/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1767877228/rapistudio/Mask_group_pzgs42.webp"
                     alt="Target Audience Background"
                     fill
                     className="object-cover"
@@ -30,7 +30,7 @@ export default function TargetAudience() {
                             </li>
                             <li className="flex items-start">
                                 <span className="mr-3 text-green-400">✓</span>
-                                Mau cek sebelum beli cat / wallpanel
+                                Mau cek sebelum beli cat / wallpanel dan RAB
                             </li>
                             <li className="flex items-start">
                                 <span className="mr-3 text-green-400">✓</span>
@@ -49,7 +49,7 @@ export default function TargetAudience() {
                             </li>
                             <li className="flex items-start">
                                 <span className="mr-3 text-red-400">✕</span>
-                                Butuh gambar teknis & RAB
+                                Butuh gambar teknis
                             </li>
                             <li className="flex items-start">
                                 <span className="mr-3 text-red-400">✕</span>

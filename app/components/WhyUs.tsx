@@ -5,7 +5,8 @@ export default function WhyUs() {
     "Bingung mau pilih motif dinding tapi nggak bisa ngebayangin hasilnya?",
     "Sebelum beli cat atau wallpanel, lihat dulu hasilnya di rumahmu.",
     "Tahu Jumlah Kebutuhan Produk Sebelum Beli",
-    "Cuma Rp50.000 untuk tahu: cocok atau tidak.",
+    "Cuma Rp75.000 untuk tahu: cocok atau tidak.",
+    "Bisa langsung beli produknya"
   ];
 
   return (

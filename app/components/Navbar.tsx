@@ -10,13 +10,6 @@ export default function Navbar() {
                             rapistudio
                         </Link>
                     </div>
-                    <div className="hidden md:block">
-                        <div className="ml-10 flex items-baseline space-x-8">
-                            <Link href="#" className="hover:text-gray-600 dark:hover:text-gray-300 px-3 py-2 transition-colors">Work</Link>
-                            <Link href="#" className="hover:text-gray-600 dark:hover:text-gray-300 px-3 py-2 transition-colors">About</Link>
-                            <Link href="#" className="hover:text-gray-600 dark:hover:text-gray-300 px-3 py-2 transition-colors">Contact</Link>
-                        </div>
-                    </div>
                 </div>
             </div>
         </nav>
