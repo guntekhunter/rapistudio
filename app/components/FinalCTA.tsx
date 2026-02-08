@@ -20,14 +20,17 @@ export default function FinalCTA() {
           Sekarang ada potongan 33% buat order pertama biar kamu lebih hemat.
         </p>
 
-        <a
-          href={whatsappUrl}
-          target="_blank"
-          onClick={() => window.fbq?.("track", "Lead")}
-          className="inline-block bg-black text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition-all"
+        <button
+          onClick={() => {
+            window.fbq?.("track", "Lead");
+
+            setTimeout(() => {
+              window.open(whatsappUrl, "_blank");
+            }, 200);
+          }}
         >
           Pesan via WhatsApp
-        </a>
+        </button>
       </div>
     </section>
   );
