@@ -8,8 +8,10 @@ export default function TargetAudience() {
                 <Image
                     src="/images/Mask_group_pzgs42_10_11zon.webp"
                     alt="Target Audience Background"
-                    fill
-                    className="object-cover"
+                    width={1200}
+                    height={800}
+                    quality={70}
+                    className="absolute inset-0 w-full h-full object-cover"
                     sizes="90vw"
                 />
             </div>

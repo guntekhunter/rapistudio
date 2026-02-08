@@ -9,16 +9,6 @@ export default function FinalCTA() {
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
-  const handleClick = () => {
-    if (typeof window !== "undefined" && (window as any).fbq) {
-      (window as any).fbq("track", "Contact");
-    }
-
-    setTimeout(() => {
-      window.open(whatsappUrl, "_blank");
-    }, 120);
-  };
-
   return (
     <section className="py-24 px-6 bg-gray-50 dark:bg-neutral-900 text-center">
       <div className="max-w-xl mx-auto">
@@ -30,12 +20,14 @@ export default function FinalCTA() {
           Sekarang ada potongan 33% buat order pertama biar kamu lebih hemat.
         </p>
 
-        <button
-          onClick={handleClick}
-          className="inline-block bg-black text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition-all transform hover:scale-105 active:scale-95"
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          onClick={() => window.fbq?.("track", "Lead")}
+          className="inline-block bg-black text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition-all"
         >
-          Klaim Diskon 33% Sekarang
-        </button>
+          Pesan via WhatsApp
+        </a>
       </div>
     </section>
   );

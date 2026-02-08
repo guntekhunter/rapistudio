@@ -11,27 +11,18 @@ export default function Hero() {
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
-  const handleClick = () => {
-    if (typeof window !== "undefined" && (window as any).fbq) {
-      (window as any).fbq("track", "Contact");
-    }
-
-    // delay supaya pixel terkirim dulu
-    setTimeout(() => {
-      window.open(whatsappUrl, "_blank");
-    }, 120);
-  };
-
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[100svh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/1213_1_v4vorw_yhhypv_9_11zon.webp"
-          alt="Lihat Desain Dindingmu Sebelum Beli Bahan"
-          fill
-          className="object-cover"
+          alt="Hero"
+          width={1200}
+          height={800}
           priority
+          quality={70}
+          className="absolute inset-0 w-full h-full object-cover"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/50" />
@@ -48,12 +39,14 @@ export default function Hero() {
           cuma Rp75.000.
         </p>
 
-        <button
-          onClick={handleClick}
-          className="inline-block bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition-all transform hover:scale-105 active:scale-95"
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          onClick={() => (window as any).fbq?.("track", "Lead")}
+          className="inline-block bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition-all"
         >
           Pesan via WhatsApp
-        </button>
+        </a>
       </div>
     </section>
   );

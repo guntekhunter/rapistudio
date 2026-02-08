@@ -1,7 +1,6 @@
+import Hero from "./components/Hero";
 import dynamic from "next/dynamic";
 
-const Navbar = dynamic(() => import("./components/Navbar"));
-const Hero = dynamic(() => import("./components/Hero"));
 const ImageGrid = dynamic(() => import("./components/ImageGrid"));
 const WhyUs = dynamic(() => import("./components/WhyUs"));
 const BeforeAfter = dynamic(() => import("./components/BeforeAfter"));
@@ -13,7 +12,6 @@ const FinalCTA = dynamic(() => import("./components/FinalCTA"));
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Navbar />
       <Hero />
       <ImageGrid />
       <WhyUs />

@@ -8,8 +8,10 @@ export default function BeforeAfter() {
         <Image
           src="/images/Mask_group-1_ccfws9_11_11zon.webp"
           alt="Background"
-          fill
-          className="object-cover"
+          width={1200}
+          height={800}
+          quality={70}
+          className="absolute inset-0 w-full h-full object-cover"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/80" /> {/* Dark overlay */}
