@@ -6,7 +6,7 @@ export default function BeforeAfter() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://res.cloudinary.com/unm/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1767877228/rapistudio/Mask_group-1_ccfws9.webp"
+          src="/images/Mask_group-1_ccfws9_11_11zon.webp"
           alt="Background"
           fill
           className="object-cover"

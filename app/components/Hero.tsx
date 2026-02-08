@@ -27,7 +27,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://res.cloudinary.com/unm/image/upload/v1770289508/rapistudio/1213_1_v4vorw_yhhypv.webp"
+          src="/images/1213_1_v4vorw_yhhypv_9_11zon.webp"
           alt="Lihat Desain Dindingmu Sebelum Beli Bahan"
           fill
           className="object-cover"

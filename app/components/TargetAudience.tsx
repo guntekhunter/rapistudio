@@ -6,7 +6,7 @@ export default function TargetAudience() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="https://res.cloudinary.com/unm/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1767877228/rapistudio/Mask_group_pzgs42.webp"
+                    src="/images/Mask_group_pzgs42_10_11zon.webp"
                     alt="Target Audience Background"
                     fill
                     className="object-cover"

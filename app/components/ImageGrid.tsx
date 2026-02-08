@@ -1,16 +1,16 @@
 import Image from "next/image";
 
 const images = [
-  "https://res.cloudinary.com/unm/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1770279792/rapistudio/45_a1kczf.webp",
-  "https://res.cloudinary.com/unm/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1770279791/rapistudio/37_qas5qe.webp",
-  "https://res.cloudinary.com/unm/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1770279791/rapistudio/72_wsy4wq.webp",
-  "https://res.cloudinary.com/unm/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1770279791/rapistudio/82_pjcdqn.webp",
-  "https://res.cloudinary.com/unm/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1770279791/rapistudio/24_bhavs1.webp",
-  "https://res.cloudinary.com/unm/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1770279790/rapistudio/17_s2hwct.webp",
-  "https://res.cloudinary.com/unm/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1770279790/rapistudio/23_jvuvcb.webp",
-  "https://res.cloudinary.com/unm/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1770279790/rapistudio/28_bj1kqy.webp",
-  "https://res.cloudinary.com/unm/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1770279789/rapistudio/10_lgsqdl.webp",
-  "https://res.cloudinary.com/unm/image/upload/f_auto,q_auto,w_auto,dpr_auto,c_scale/v1767877228/rapistudio/Mask_group-2_kom288.webp",
+  "/images/45_a1kczf_5_11zon.webp",
+  "/images/37_qas5qe_4_11zon.webp",
+  "/images/72_wsy4wq_6_11zon.webp",
+  "/images/82_pjcdqn_7_11zon.webp",
+  "/images/24_bhavs1_2_11zon.webp",
+  "/images/17_s2hwct_15_11zon.webp",
+  "/images/23_jvuvcb_1_11zon.webp",
+  "/images/28_bj1kqy_3_11zon.webp",
+  "/images/10_lgsqdl_14_11zon.webp",
+  "/images/Mask_group-2_kom288_12_11zon.webp",
 ];
 
 export default function ImageGrid() {

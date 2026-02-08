@@ -1,12 +1,14 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import ImageGrid from "./components/ImageGrid";
-import WhyUs from "./components/WhyUs";
-import BeforeAfter from "./components/BeforeAfter";
-import OrderingSteps from "./components/OrderingSteps";
-import TargetAudience from "./components/TargetAudience";
-import PricingExplanation from "./components/PricingExplanation";
-import FinalCTA from "./components/FinalCTA";
+import dynamic from "next/dynamic";
+
+const Navbar = dynamic(() => import("./components/Navbar"));
+const Hero = dynamic(() => import("./components/Hero"));
+const ImageGrid = dynamic(() => import("./components/ImageGrid"));
+const WhyUs = dynamic(() => import("./components/WhyUs"));
+const BeforeAfter = dynamic(() => import("./components/BeforeAfter"));
+const OrderingSteps = dynamic(() => import("./components/OrderingSteps"));
+const TargetAudience = dynamic(() => import("./components/TargetAudience"));
+const PricingExplanation = dynamic(() => import("./components/PricingExplanation"));
+const FinalCTA = dynamic(() => import("./components/FinalCTA"));
 
 export default function Home() {
   return (
