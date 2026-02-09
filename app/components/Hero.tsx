@@ -4,22 +4,21 @@ import WhatsAppButton from "./WhatsappButton";
 export default function Hero() {
   return (
     <section className="relative min-h-svh flex items-center justify-center overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/1213_1_v4vorw_yhhypv_9_11zon.webp"
-          alt="Hero"
-          fill
-          priority
-          quality={75}
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/50" />
-      </div>
+      {/* ✅ Move Image DIRECTLY inside section (no wrapper div) */}
+      <Image
+        src="/images/1213_1_v4vorw_yhhypv_9_11zon.webp"
+        alt="Hero background"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover -z-10"
+      />
+
+      {/* overlay */}
+      <div className="absolute inset-0 bg-black/50 -z-10" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto text-white">
+      <div className="relative text-center px-4 max-w-4xl mx-auto text-white">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-6">
           Lihat Desain Dindingmu Sebelum Beli Bahan
         </h1>

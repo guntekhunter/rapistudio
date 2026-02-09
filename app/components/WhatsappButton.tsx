@@ -1,6 +1,10 @@
 "use client";
 
-export default function WhatsAppButton() {
+type Props = {
+  className?: string;
+};
+
+export default function WhatsAppButton({ className }: Props) {
   const phoneNumber = "6285656646637";
 
   const message = encodeURIComponent(
@@ -9,16 +13,21 @@ export default function WhatsAppButton() {
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
-  const handleClick = () => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
     window.fbq?.("track", "Lead");
-    window.open(whatsappUrl, "_blank");
+    setTimeout(() => {
+      window.open(whatsappUrl, "_blank");
+    }, 200);
   };
 
   return (
     <a
       href={whatsappUrl}
       target="_blank"
-      className="bg-black rounded-full px-5 py-3 inline-block"
+      rel="noopener noreferrer"
+      onClick={handleClick}
+      className={`bg-black rounded-full px-5 py-3 inline-block ${className ?? ""}`}
     >
       Pesan via WhatsApp
     </a>

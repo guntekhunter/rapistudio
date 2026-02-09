@@ -12,7 +12,7 @@ export default function FinalCTA() {
           Sekarang ada potongan 33% buat order pertama biar kamu lebih hemat.
         </p>
 
-        <WhatsAppButton />
+        <WhatsAppButton className="text-white" />
       </div>
     </section>
   );
