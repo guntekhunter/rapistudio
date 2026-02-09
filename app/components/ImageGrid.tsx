@@ -36,7 +36,7 @@ export default function ImageGrid() {
                 src={src}
                 alt={`Portfolio item ${index + 1}`}
                 fill
-                quality={70}
+                quality={75}
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />

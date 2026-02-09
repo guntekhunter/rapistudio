@@ -1,29 +1,19 @@
-"use client";
-
 import Image from "next/image";
+import WhatsAppButton from "./WhatsappButton";
 
 export default function Hero() {
-  const phoneNumber = "6285656646637";
-
-  const message = encodeURIComponent(
-    "Halo, saya tertarik dengan jasa desain dinding Rp50.000. Bisa jelaskan lebih lanjut?"
-  );
-
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-
   return (
-    <section className="relative min-h-[100svh] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+    <section className="relative min-h-svh flex items-center justify-center overflow-hidden">
+      {/* Background */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/1213_1_v4vorw_yhhypv_9_11zon.webp"
           alt="Hero"
-          width={1200}
-          height={800}
+          fill
           priority
-          quality={70}
-          className="absolute inset-0 w-full h-full object-cover"
+          quality={75}
           sizes="100vw"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-black/50" />
       </div>
@@ -39,17 +29,7 @@ export default function Hero() {
           cuma Rp75.000.
         </p>
 
-        <button
-          onClick={() => {
-            window.fbq?.("track", "Lead");
-
-            setTimeout(() => {
-              window.open(whatsappUrl, "_blank");
-            }, 200);
-          }}
-        >
-          Pesan via WhatsApp
-        </button>
+        <WhatsAppButton />
       </div>
     </section>
   );

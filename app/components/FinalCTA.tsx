@@ -1,16 +1,8 @@
-"use client";
+import WhatsAppButton from "./WhatsappButton";
 
 export default function FinalCTA() {
-  const phoneNumber = "6285656646637";
-
-  const message = encodeURIComponent(
-    "Halo, saya tertarik dengan jasa desain dinding Rp50.000. Bisa jelaskan lebih lanjut?"
-  );
-
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-
   return (
-    <section className="py-24 px-6 bg-gray-50 dark:bg-neutral-900 text-center">
+    <section className="py-24 px-6 dark:bg-neutral-900 text-center">
       <div className="max-w-xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
           Masih ragu-ragu? Santai, ngobrol dulu aja.
@@ -20,17 +12,7 @@ export default function FinalCTA() {
           Sekarang ada potongan 33% buat order pertama biar kamu lebih hemat.
         </p>
 
-        <button
-          onClick={() => {
-            window.fbq?.("track", "Lead");
-
-            setTimeout(() => {
-              window.open(whatsappUrl, "_blank");
-            }, 200);
-          }}
-        >
-          Pesan via WhatsApp
-        </button>
+        <WhatsAppButton />
       </div>
     </section>
   );
