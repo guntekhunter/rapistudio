@@ -1,6 +1,10 @@
 import Image from "next/image";
 
-const images = ["/images/testimoni 1.webp"];
+const images = [
+  "/images/testimoni 1.webp",
+  "/images/testimoni 2.webp",
+  "/images/testimoni 3.webp",
+];
 
 export default function ImageGrid() {
   return (
