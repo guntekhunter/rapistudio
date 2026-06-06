@@ -1,9 +1,5 @@
 import Hero from "./components/Hero";
 import dynamic from "next/dynamic";
-
-const PromoLiburLebaran = dynamic(
-  () => import("./components/PromoLiburLebaran"),
-);
 const ImageGrid = dynamic(() => import("./components/ImageGrid"));
 const Testimoni = dynamic(() => import("./components/Testimoni"));
 const WhyUs = dynamic(() => import("./components/WhyUs"));
@@ -19,7 +15,6 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Hero />
-      <PromoLiburLebaran />
       <ImageGrid />
       <WhyUs />
       <BeforeAfter />

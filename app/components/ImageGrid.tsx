@@ -1,16 +1,16 @@
 import Image from "next/image";
 
 const images = [
-  "/images/45_a1kczf_5_11zon.webp",
-  "/images/37_qas5qe_4_11zon.webp",
-  "/images/72_wsy4wq_6_11zon.webp",
-  "/images/82_pjcdqn_7_11zon.webp",
-  "/images/24_bhavs1_2_11zon.webp",
-  "/images/17_s2hwct_15_11zon.webp",
-  "/images/23_jvuvcb_1_11zon.webp",
-  "/images/28_bj1kqy_3_11zon.webp",
-  "/images/10_lgsqdl_14_11zon.webp",
-  "/images/Mask_group-2_kom288_12_11zon.webp",
+  "/images/10.webp",
+  "/images/1.webp",
+  "/images/3.webp",
+  "/images/4.webp",
+  "/images/5.webp",
+  "/images/6.webp",
+  "/images/7.webp",
+  "/images/8.webp",
+  "/images/9.webp",
+  "/images/11.webp",
 ];
 
 export default function ImageGrid() {
